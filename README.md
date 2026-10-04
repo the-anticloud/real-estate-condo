@@ -1,0 +1,94 @@
+# CONDO
+
+![license](https://img.shields.io/badge/license-Apache--2.0-blue) ![licence](https://img.shields.io/badge/enterprise-dual--licence-informational) ![audit](https://img.shields.io/badge/audit-SHA3--256-orange) ![collection](https://img.shields.io/badge/collection-Anticloud%20FZ%20LLE-lightgrey)
+
+> Full evidence: `OFFICIAL_BENCHMARKS/` · lab: `ISOLATED_LAB_RESULTS/` (where present).
+
+| | |
+|---|---|
+| Collection | REAL ESTATE |
+| Vendor | Anticloud FZ LLE |
+| Licence | Apache-2.0 + Enterprise commercial dual (Anticommons 1.0) |
+| Payload | documentation, evidence and licence material |
+
+## What this project is
+
+Full evidence: `OFFICIAL_BENCHMARKS/` · lab: `ISOLATED_LAB_RESULTS/` (where present).
+
+This project contains a runnable inference artifact; measured throughput and accuracy claims for it are listed in the evidence table below and nowhere else.
+
+## Architecture
+
+```mermaid
+graph LR
+    D[docs/ handoff package] --> R[real-estate-condo]
+    R --> E[EVIDENCE.json\nmeasured results + provenance]
+    E --> A[SHA3-256 audit chain]
+    A --> L[Apache-2.0]
+```
+
+## Install
+
+```bash
+npm ci
+npm test
+docker build -t real-estate-condo .
+docker run --rm real-estate-condo
+```
+
+Detected stack: node, docker
+
+## Evidence and measured results
+
+**NOT MEASURED.** No results file in this project carries both a value and run provenance (commit or date), so no benchmark number is claimed here. This is deliberate: Anticloud FZ LLE does not publish unmeasured scores.
+
+## Millennium problem proposals
+
+This project packages Anticloud Millennium problem proposals: P01, P02, P03, P04, P05, P06, P07, P08, P09, P10, P11, P12, P13, P14.
+
+Proposals are shipped as PDFs under `25_MILLENNIUM_PROBLEM_PROPOSALS/` in the internal handoff tree and summarised in `docs/`.
+
+## Documentation map
+
+- `01_INVESTOR_PACKAGE/`
+- `02_COMMITMENT_TO_SOCIETY/`
+- `03_COMMITMENT_TO_HUMANITY/`
+- `04_COMMITMENT_TO_ENVIRONMENT/`
+- `05_COMMITMENTS_TO_PAST_PRESENT_FUTURE/`
+- `06_WHITELABELLING_AND_REPACKAGING/`
+- `07_ENTERPRISE_LICENSE_AND_PRICING/`
+- `08_INTELLECTUAL_PROPERTY_AND_RIGHTS/`
+- `09_COMPLIANCE/`
+- `10_TECHNICAL_HANDOFF/`
+- `11_TUTORIAL_DEVELOPERS/`
+- `12_TUTORIAL_ENTERPRISE/`
+- `13_TUTORIAL_USERS/`
+- `14_DEVELOPER_COOKBOOKS/`
+- `15_DISASTER_RECOVERY/`
+- `16_VULNERABILITY_MANAGEMENT/`
+- `17_HOW_TO_UPDATE/`
+- `18_COMMAND_LINE_INTERFACE/`
+- `19_SYSTEM_OF_THINGS_SOT/`
+- `20_ACADEMIC_RESEARCH/`
+- `21_RELATED_SCIENTIFIC_RESEARCH/`
+- `22_INDEPENDENT_INSURANCE/`
+- `23_HOW_TO_CITE/`
+- `24_ANTICOMMONS_LICENSE/`
+- `25_MILLENNIUM_PROBLEM_PROPOSALS/`
+- `26_INTEGRATIONS_AND_SDK/`
+- `27_DEPENDENCIES/`
+- `28_TECHNICAL_WHITEPAPER/`
+- `29_INVESTOR_MEMO/`
+- `30_LOI/`
+- `31_UNIT_ECONOMICS/`
+- `32_CONTRACTS/`
+- `33_COMPETITIVE_MOAT/`
+- `34_FOUNDER_PROFILE/`
+- `35_INVESTOR_FAQ/`
+- `36_ADVISORY_BOARD/`
+
+## Licence
+
+Licensed under **Apache-2.0 + Enterprise commercial dual (Anticommons 1.0)**. See `LICENSE` and `NOTICE.md`. Apache-2.0 governs the open-source component; commercial use inside closed enterprise products is governed by the Anticloud Enterprise licence.
+
+SPDX-License-Identifier: Apache-2.0
